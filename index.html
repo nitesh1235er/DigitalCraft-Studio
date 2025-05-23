@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DigitalCraft Studios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3 smooth-scroll-wrapper">
+        <a class="navbar-brand" href="#home">DigitalCraft Studios</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#contact">Contact</a>
+            </li>
+        </ul>
+        <li style="list-style: none;">
+            <!-- Sign Up -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Sign Up
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new account</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <main class="form-signin w-100 m-auto">
+                                <form>
+                                    <h1>DigitalCraft Studio</h1>
+                                    <br>
+                                    <h1 class="h3 mb-3 fw-normal">Sign Up</h1>
+
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com" fdprocessedid="xo9dir">
+                                        <label for="floatingInput">Email address or Phone</label>
+                                    </div>
+                                    <br>
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control" id="floatingInput" placeholder="DOB">
+                                        <label for=" floatingInput">DOB</label>
+                                    </div>
+                                    <br>
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                            placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                    </div>
+                                    <br>
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                            placeholder="Password">
+                                        <label for="floatingPassword">Repeat Password</label>
+                                    </div>
+                                    <br>
+                                    <div class="form-check text-start my-3">
+                                        <input class="form-check-input" type="checkbox" value="remember-me"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <button class="btn btn-primary w-100 py-2" type="submit">Sign Up</button>
+                                </form>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sign in -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                Sign in
+            </button>
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel1">Sign in</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <main class="form-signin w-100 m-auto">
+                                <form>
+                                    <h1>DigitalCraft Studio</h1>
+                                    <br>
+                                    <h1 class="h3 mb-3 fw-normal">Sign in with registered email or phone!</h1>
+
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInputemail"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInputemail">Email address</label>
+                                    </div>
+                                    <br>
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                            placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                    </div>
+                                    <br>
+                                    <div class="form-check text-start my-3">
+                                        <input class="form-check-input" type="checkbox" value="remember-me"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <button class="btn btn-primary w-100 py-2" type="submit" fdprocessedid="gk68qn">Sign
+                                        in</button>
+                                    <p class="mt-5 mb-3 text-body-secondary">© 2017–2024</p>
+                                </form>
+                            </main>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </nav>
+    <main>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+            data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+            <section id="home" class="jumbotron text-center text-primary-emphasis"
+                style="background-color: rgb(233, 143, 8); border-radius: 5px;">
+                <h1 class="display-4">Welcome to DigitalCraft Studios</h1>
+                <p class="lead" p->Crafting your digital dreams into reality.</p>
+                <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+            </section>
+            <div class="container" id="home">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/Resources/Images/Guide to Web 3.0.png" class="d-block w-100"
+                                alt="guide-to-web-3.0" height="500px" width="200px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/Resources/Images/App-Development-01-1.jpg" class="d-block w-100"
+                                alt="app-development" height="500px" width="200px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Resources/Images/Graphic-Design.jpg" class="d-block w-100"
+                                alt="graphic-design" height="500px" width="200px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/Resources/Images/e-commerce-solutions.jpg" class="d-block w-100"
+                                alt="graphic-design" height="500px" width="200px">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div>
+                    <p>
+                    </p>
+                </div>
+            </div>
+            <div class="container my-5" id="about">
+                <div class="container col-xxl-8 px-4 py-5">
+                    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                        <div class="col-10 col-sm-8 col-lg-6">
+                            <img src="/Resources/Images/Guide to Web 3.0.png"
+                                class="d-block mx-lg-auto img-fluid" alt="DigitalCraft Studio" width="800" height="600"
+                                loading="lazy">
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="text-center display-5 fw-bold text-body-emphasis lh-1 mb-3">Welcome to
+                                DigitalCraft
+                                Studio!</h1>
+                            <p class="lead" id="font">DigitalCraft Studio is your one-stop destination for creative
+                                digital
+                                solutions. We
+                                specialize in crafting unique, high-quality digital experiences that leave a lasting
+                                impression.
+                                Whether you're looking for bespoke web design, innovative app development, or engaging
+                                digital
+                                marketing strategies, we have the expertise to bring your vision to life.</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="services">
+                <div class="container px-4 py-5">
+                    <h2 class="pb-2 border-bottom text-center text-primary-emphasis font2">Our Services</h2>
+                    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                        <div class="col d-flex flex-column align-items-start gap-2">
+                            <h2 class="fw-bold text-body-emphasis font2">At DigitalCraft Studio, Services</h2>
+                            <p class="text-body-secondary font2">We offer a comprehensive range of digital services
+                                designed
+                                to help
+                                your business thrive in the digital landscape. Our team of experts is committed to
+                                delivering
+                                innovative solutions tailored to meet your unique needs. Here’s a closer look at our
+                                core
+                                services:</p>
+                        </div>
+
+                        <div class="col">
+                            <div class="row row-cols-1 row-cols-sm-2 g-4">
+                                <div class="col d-flex flex-column gap-2">
+                                    <div
+                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                    </div>
+                                    <img src="/Resources/svg/web-development.svg" height="90px"
+                                        width="90px" alt="">
+                                    <h4 class="fw-semibold mb-0 text-body-emphasis font2">Web Design & Development</h4>
+                                    <p class="text-body-secondary font3">From sleek corporate websites to dynamic
+                                        e-commerce
+                                        platforms, our web design and development services ensure your online presence
+                                        is
+                                        impactful and effective. We focus on creating responsive, user-friendly sites
+                                        that
+                                        look
+                                        great on all devices.</p>
+                                </div>
+
+                                <div class="col d-flex flex-column gap-2">
+                                    <div
+                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="90px" height="90px"
+                                        fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
+                                        <path
+                                            d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27" />
+                                    </svg>
+                                    <h4 class="fw-semibold mb-0 text-body-emphasis font2">App Development</h4>
+                                    <p class="text-body-secondary fon3">Our app development team specializes in creating
+                                        intuitive
+                                        and engaging mobile and web applications. Whether you need a business app, a
+                                        game,
+                                        or a
+                                        utility, we have the expertise to develop high-performance solutions.</p>
+                                </div>
+
+                                <div class="col d-flex flex-column gap-2">
+                                    <div
+                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                    </div>
+                                    <img src="/Resources/svg/graphic-design.svg" height="90px"
+                                        width="90px" alt="">
+                                    <h4 class="fw-semibold mb-0 text-body-emphasis font2">Graphic Design</h4>
+                                    <p class="text-body-secondary font3">Our graphic design services cover everything
+                                        from
+                                        logo design
+                                        to complete brand identity. We create visually compelling designs that resonate
+                                        with
+                                        your audience and elevate your brand.</p>
+                                </div>
+
+                                <div class="col d-flex flex-column gap-2">
+                                    <div
+                                        class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                    </div>
+                                    <img src="/Resources/svg/e-commerce-solutions.svg" height="90px"
+                                        width="90px" alt="">
+                                    <h4 class="fw-semibold mb-0 text-body-emphasis font2">E-Commerce Solutions</h4>
+                                    <p class="text-body-secondary font3">We build custom e-commerce platforms that are
+                                        tailored to
+                                        your business needs. Our solutions are designed to provide a seamless shopping
+                                        experience for your customers and drive sales growth.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="testimonials">
+                <h5 class="text-center text-primary-emphasis">TESTIMONIALS</h5>
+                <h2 class="text-center text-success-emphasis">Happy Customers</h2>
+                <div class="text-center" style="font-family: 'Raleway';font-size: 2rem;">Hear from the happy clients who
+                    keep
+                    coming back for more learner.</div>
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="card mb-3" style="max-width: 100%;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="/Resources/Images/analisa.jpg"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Analisa</h5>
+                                            <p class="card-text font3"><span
+                                                    style="font-weight: 400; font-style: italic;">Analisa has
+                                                    excellent skills in online course technology. She has helped me get
+                                                    my
+                                                    online academy started by setting up and loading course content
+                                                    using
+                                                    Learndash and Articulate Storyline. Her knowledge of WordPress and
+                                                    business
+                                                    acumen is a real asset. She shares business tips with me and I truly
+                                                    value
+                                                    her versatility.</span></p>
+
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p>
+                                                    <h6><span style="font-weight: 400;"
+                                                            style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Pamela
+                                                            Toussaint, CEO &amp; Founder, <a
+                                                                href="https://ultimateimagecoach.com/"
+                                                                target="_blank">Ultimate
+                                                                Image Coach</a></span></h6>
+                                                    </p>
+                                                </blockquote>
+                                                <figcaption class="blockquote-footer">
+                                                    Someone famous in <cite title="Source Title">Ultimate Image
+                                                        Coach</cite>
+                                                </figcaption>
+                                            </figure>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="card mb-3" style="max-width: 100%;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="/Resources/Images/Missy_Hyatt,_1986.png" height="300px"
+                                            width="200px" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Missy</h5>
+                                            <p class="card-text font3">
+                                            <p>Working with Analisa to build my Kajabi website for my coaching business
+                                                has
+                                                been
+                                                an absolute game-changer! What truly sets Analisa apart is her
+                                                unparalleled
+                                                professionalism and commitment to excellence. She was always available
+                                                to
+                                                answer
+                                                my questions, address any concerns, and offer valuable insights to
+                                                optimize
+                                                the
+                                                performance of my website and course offerings. Her proactive approach
+                                                and
+                                                proactive communication made the entire project feel effortless and
+                                                stress-free.
+                                            </p>
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p>
+                                                    <h6>Marissa Ooyevaar, Founder, <a
+                                                            href="https://www.businessmissy.com/">Business Missy</a>
+                                                    </h6>
+                                                    </p>
+                                                </blockquote>
+                                                <figcaption class="blockquote-footer">
+                                                    Someone famous in <cite title="Source Title">Business Missy</cite>
+                                                </figcaption>
+                                            </figure>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 4 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="card mb-3" style="max-width: 100%;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="/Resources/Images/Calderon-Analisa-184x300.jpg"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Analisa 2</h5>
+                                            <p class="card-text font3">
+                                            <p><span style="font-weight: 400; font-style: italic;">Analisa has the full
+                                                    package
+                                                    of tech knowledge, customer service, and personality. She has
+                                                    experience
+                                                    in
+                                                    almost every tech package you can imagine and keeps up with all the
+                                                    latest
+                                                    trends too. She has social media management, blog writing, website
+                                                    building,
+                                                    CRM, LMS, email marketing skills and more. Thank you Analisa for
+                                                    everything
+                                                    you have done for me and my business over the last 7+ years!</span>
+                                            </p>
+                                            </p>
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p>
+                                                    <h6>Kathi Randall, Founder, <a href="https://www.rnbizhub.com/"
+                                                            target="_parent">RN BizHUb</a> &amp; <a
+                                                            href="https://home.synapsecare.com/">Synapse Care
+                                                            Solutions</a>
+                                                    </h6>
+                                                    </p>
+                                                </blockquote>
+                                                <figcaption class="blockquote-footer">
+                                                    Someone famous in <cite title="Source Title">Synapse Care
+                                                        Solutions</cite>
+                                                </figcaption>
+                                            </figure>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 5 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="card mb-3" style="max-width: 100%;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="/Resources/Images/camiller walker.jpg"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Camille Walker</h5>
+                                            <p class="card-text font3">
+                                            <p><span style="font-weight: 400;">Working with Ana Lisa was a game changer
+                                                    for
+                                                    me.
+                                                    She helped me put my ideas into action and which made my goals
+                                                    possible.
+                                                    The
+                                                    best part is knowing she will do what she says she will do. She is
+                                                    proficient, reliable, and wonderful to work with.</span></p>
+                                            </p>
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p>
+                                                    <h6><a href="https://camillewalker.co/">Camille Walker</a>, Coach,
+                                                        Podcaster
+                                                        &amp; Entrepreneur</h6>
+                                                    </p>
+                                                </blockquote>
+                                                <figcaption class="blockquote-footer">
+                                                    Someone famous in <cite title="Source Title">Entrepreneur</cite>
+                                                </figcaption>
+                                            </figure>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 6 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="card mb-3" style="max-width: 100%;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="/Resources/Images/kinely moss.jpg"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Kinley Moss</h5>
+                                            <p class="card-text font3">
+                                            <p><span style="font-weight: 400;">Ana Lisa is attentive and quick. She
+                                                    built my
+                                                    website, set up email funnels, and set up my online course. Not only
+                                                    did
+                                                    she
+                                                    do the work, but she also took the time to teach me how to do things
+                                                    myself!
+                                                    I highly recommend using her to build your online business!</span>
+                                            </p>
+                                            </p>
+                                            <figure>
+                                                <blockquote class="blockquote">
+                                                    <p>
+                                                    <h6>Kinley Moss, Founder, <a
+                                                            href="https://www.kinleyslane.com/enroll">The
+                                                            Trauma Toolbox</a></h6>
+                                                    </p>
+                                                </blockquote>
+                                                <figcaption class="blockquote-footer">
+                                                    Someone famous in <cite title="Source Title">The Trauma
+                                                        Toolbox</cite>
+                                                </figcaption>
+                                            </figure>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 8 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="container py-5" id="team">
+                    <h1 class="text-center text-primary-emphasis">Our Team</h1>
+                    <p class="text-success-emphasis" style="font-family: 'Raleway';font-size: 2rem" ;>At DigitalCraft
+                        Studios, our team is the heart and soul of our creative endeavors. Comprised of passionate
+                        designers, skilled developers, and strategic thinkers, we come together to transform ideas into
+                        digital masterpieces. Each member brings a unique perspective and a wealth of experience to the
+                        table, ensuring that every project is handled with the utmost care and expertise. Whether it's
+                        crafting a visually stunning website or developing a robust application, our team's
+                        collaborative
+                        spirit and commitment to excellence drive us to deliver exceptional results for our clients.
+                        We're
+                        not just colleagues; we're a family dedicated to pushing the boundaries of digital innovation.
+                    </p>
+                    <div class="row row-cols-1 row-cols-md-2 g-4 py-5">
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4" id="col-md-4">
+                                        <img src="/Resources/Images/nitesh.jpg"
+                                            class="img-fluid im-flu rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8" id="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Nitesh Kumar</h5>
+                                            <p class="card-text">Nitesh is pursuing bca from Guru Kashi University he is
+                                                a
+                                                beginer full-stack developer.</p>
+                                            <p class="card-text"><small class="text-muted">Designation :
+                                                    Full-Stack</small>
+                                            </p>
+                                        </div>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="https://www.facebook.com/profile.php?id=100023600751187&mibextid=ZbWKwL"
+                                                target="_blank"><i class="bi bi-facebook" id="bi"></i></a>
+                                            <a href="https://www.instagram.com/niteshsharma23950?igsh=cDEyOHJ4bXJvcGQ1"><i
+                                                    class="bi bi-instagram" id="bi"></i></a>
+                                            <a href="mailto:sharmanitesh23950@gmail.com"><i class="bi bi-envelope-fill"
+                                                    id="bi"></i></a>
+                                            <a href="https://www.linkedin.com/in/nitesh-sharma-2654b3214/"><i
+                                                    class="bi bi-linkedin" id="bi"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4" id="col-md-4">
+                                        <img src="/Resources/Images/ankit.jpg"
+                                            class="img-fluid im-flu rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8" id="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ankit Kumar</h5>
+                                            <p class="card-text">Ankit is pursuing bca from Guru Kashi University he is
+                                                a
+                                                frontend developer.</p>
+                                            <p class="card-text"><small class="text-muted">Designation :
+                                                    Frontend-Developer</small>
+                                            </p>
+                                        </div>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="https://www.facebook.com/profile.php?id=100023600751187&mibextid=ZbWKwL"
+                                                target="_blank"><i class="bi bi-facebook" id="bi"></i></a>
+                                            <a href="https://www.instagram.com/niteshsharma23950?igsh=cDEyOHJ4bXJvcGQ1"><i
+                                                    class="bi bi-instagram" id="bi"></i></a>
+                                            <a href="mailto:sharmanitesh23950@gmail.com"><i class="bi bi-envelope-fill"
+                                                    id="bi"></i></a>
+                                            <a href="https://www.linkedin.com/in/nitesh-sharma-2654b3214/"><i
+                                                    class="bi bi-linkedin" id="bi"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4" id="col-md-4">
+                                        <img src="/Resources/Images/ankit.jpg"
+                                            class="img-fluid im-flu rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8" id="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ankit Kumar</h5>
+                                            <p class="card-text">Ankit is pursuing bca from Guru Kashi University he is
+                                                a
+                                                frontend developer.</p>
+                                            <p class="card-text"><small class="text-muted">Designation :
+                                                    Frontend-Developer/small>
+                                            </p>
+                                        </div>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="https://www.facebook.com/profile.php?id=100023600751187&mibextid=ZbWKwL"
+                                                target="_blank"><i class="bi bi-facebook" id="bi"></i></a>
+                                            <a href="https://www.instagram.com/niteshsharma23950?igsh=cDEyOHJ4bXJvcGQ1"><i
+                                                    class="bi bi-instagram" id="bi"></i></a>
+                                            <a href="mailto:sharmanitesh23950@gmail.com"><i class="bi bi-envelope-fill"
+                                                    id="bi"></i></a>
+                                            <a href="https://www.linkedin.com/in/nitesh-sharma-2654b3214/"><i
+                                                    class="bi bi-linkedin" id="bi"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4" id="col-md-4">
+                                        <img src="/Resources/Images/nitesh.jpg"
+                                            class="img-fluid im-flu rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8" id="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Nitesh Kumar</h5>
+                                            <p class="card-text">Nitesh is pursuing bca from Guru Kashi University he is
+                                                a
+                                                beginer full-stack developer.</p>
+                                            <p class="card-text"><small class="text-muted">Designation :
+                                                    Full-Stack</small>
+                                            </p>
+                                        </div>
+                                        <div class="d-flex justify-content-around">
+                                            <a href="https://www.facebook.com/profile.php?id=100023600751187&mibextid=ZbWKwL"
+                                                target="_blank"><i class="bi bi-facebook" id="bi"></i></a>
+                                            <a href="https://www.instagram.com/niteshsharma23950?igsh=cDEyOHJ4bXJvcGQ1"><i
+                                                    class="bi bi-instagram" id="bi"></i></a>
+                                            <a href="mailto:sharmanitesh23950@gmail.com"><i class="bi bi-envelope-fill"
+                                                    id="bi"></i></a>
+                                            <a href="https://www.linkedin.com/in/nitesh-sharma-2654b3214/"><i
+                                                    class="bi bi-linkedin" id="bi"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center" id="gallery">
+                    <h1 class="text-primary-emphasis">Gallery</h1>
+                    <p class="text-success-emphasis" style="font-family: 'Raleway';font-size: 2rem" ;>Welcome to the
+                        DigitalCraft Studios Gallery, where creativity comes to life. Here, you'll find a curated
+                        collection
+                        of our most stunning projects, each showcasing the artistry and precision that define our work.
+                        From
+                        sleek, modern websites to interactive applications and visually captivating branding, our
+                        gallery
+                        highlights the diverse range of skills and styles we bring to every project. Each image is a
+                        testament to our commitment to quality and innovation, offering a glimpse into the vibrant
+                        digital
+                        landscapes we've crafted for our clients. Explore our portfolio and discover the power of
+                        exceptional design</p>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/Resources/Images/Guide to Web 3.0.png" class="d-block w-100"
+                                    alt="web-development" height="400px" width="300px">
+                                <br>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Web Development</h5>
+                                    <p>From sleek corporate websites to dynamic e-commerce platforms, our web design and
+                                        development services ensure your online presence is impactful and effective. We
+                                        focus on
+                                        creating responsive, user-friendly sites that look great on all devices.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Resources/Images/App-Development-01-1.jpg"
+                                    class="d-block w-100" alt="app-development" height="400px" width="300px">
+                                <br>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>App Development</h5>
+                                    <p>Our app development team specializes in creating intuitive and engaging mobile
+                                        and
+                                        web
+                                        applications. Whether you need a business app, a game, or a utility, we have the
+                                        expertise to develop high-performance solutions.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Resources/Images/e-commerce-solutions.jpg"
+                                    class="d-block w-100" alt="e-commerce-solutions" height="400px" width="300px">
+                                <br>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>E-Commerce-Solutions</h5>
+                                    <p>Our graphic design services cover everything from logo design to complete brand
+                                        identity.
+                                        We create visually compelling designs that resonate with your audience and
+                                        elevate
+                                        your
+                                        brand.</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/Images/Graphic-Design.jpg" class="d-block w-100"
+                                        alt="graphic-design" height="400px" width="300px">
+                                    <br>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Graphic Design</h5>
+                                        <p>We build custom e-commerce platforms that are tailored to your business
+                                            needs.
+                                            Our
+                                            solutions are designed to provide a seamless shopping experience for your
+                                            customers
+                                            and drive sales growth.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section id="contact" class="container my-5">
+                        <h2>Contact Us</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" rows="3" required></textarea>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </section>
+                </div>
+
+                <footer class="py-5">
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                        <p>© 2024 Company, Inc. All rights reserved.</p>
+                        <div>
+                            <h1>Get In Touch</h1>
+                            <a href="https://www.facebook.com/profile.php?id=100023600751187&mibextid=ZbWKwL"
+                                target="_blank"><i class="bi bi-facebook" id="bi"></i></a>
+                            <a href="https://www.instagram.com/niteshsharma23950?igsh=cDEyOHJ4bXJvcGQ1"><i
+                                    class="bi bi-instagram" id="bi"></i></a>
+                            <a href="mailto:sharmanitesh23950@gmail.com"><i class="bi bi-envelope-fill" id="bi"></i></a>
+                            <a href="https://www.linkedin.com/in/nitesh-sharma-2654b3214/"><i class="bi bi-linkedin"
+                                    id="bi"></i></a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+</body>
+
+</html>
